@@ -1,5 +1,9 @@
 # FULL_ADDER_SUBTRACTOR
 
+Developed by: Preetha.K
+
+Register Number: 212224100044
+
 Implementation-of-Full-Adder-and-Full-subtractor-circuit
 
 **AIM:**
@@ -38,18 +42,66 @@ Borrow out = A'Bin + A'B + BBin
 
 **Truthtable**
 
+![Screenshot 2025-04-23 171106](https://github.com/user-attachments/assets/bc08f330-b963-4fed-8469-697314b99d89)
+
+![Screenshot 2025-04-23 171106](https://github.com/user-attachments/assets/799a4c29-eda2-4bd9-9a2e-456ae35ddc04)
+
 **Procedure**
 
 Write the detailed procedure here
 
+```
+  1.Type the program in Quartus software.
+  2.Compile and run the program.
+  3.Generate the RTL schematic and save the logic diagram.
+  4.Create nodes for inputs and outputs to generate the timing diagram.
+  5.For different input combinations generate the timing diagram.
+```
+
 **Program:**
 
-/* Program to design a half subtractor and full subtractor circuit and verify its truth table in quartus using Verilog programming. Developed by: RegisterNumber:
-*/
+Program to design a half subtractor and full subtractor circuit and verify its truth table in quartus using Verilog programming.
+
+```
+
+FULL ADDER
+
+module FH(a,b,c,sum, carry);
+input a,b,c;
+output sum, carry;
+wire w1,w2,w3;
+assign sum=a^b^c;
+assign w1=a&b;
+assign w2=b&c;
+assign w3=c&a;
+assign carry=w1|w2|w3;
+endmodule;
+
+FULL SUBTRACTOR
+
+module FH(difference, borrow, a, b, bin);
+input a,b,bin;
+output differencef,borrow;
+wire w1,w2,w3;
+assign w1=a^b;
+assign w2=(~a&b);
+assign w3=(~w1&bin);
+assign difference=w1^bin;
+assign borrow=w2|w3;
+endmodule;
+```
 
 **RTL Schematic**
 
+![Screenshot 2025-04-23 171322](https://github.com/user-attachments/assets/566502ae-b16a-48d0-90d8-c1043d232769)
+
+![Screenshot 2025-04-23 171342](https://github.com/user-attachments/assets/8e6ba310-1034-4472-a10d-eba686d314ba)
+
 **Output Timing Waveform**
+
+![image](https://github.com/user-attachments/assets/48c27734-a58b-4d92-8c73-799dcfd4bc12)
+
+![image](https://github.com/user-attachments/assets/ce3625da-04dc-4533-84f3-29701ab21e6d)
 
 **Result:**
 
