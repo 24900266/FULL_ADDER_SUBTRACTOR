@@ -44,7 +44,8 @@ Borrow out = A'Bin + A'B + BBin
 
 ![Screenshot 2025-04-23 171106](https://github.com/user-attachments/assets/bc08f330-b963-4fed-8469-697314b99d89)
 
-![Screenshot 2025-04-23 171106](https://github.com/user-attachments/assets/799a4c29-eda2-4bd9-9a2e-456ae35ddc04)
+![image](https://github.com/user-attachments/assets/55c9341d-c968-4eb1-9f7c-48fb89ac91c4)
+
 
 **Procedure**
 
